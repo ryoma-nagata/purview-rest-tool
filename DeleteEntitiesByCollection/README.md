@@ -8,7 +8,7 @@ git clone 後、移動します。
 
 ```bash:bash
 
-cd DeleteEntitiesByCollection
+cd purview-rest-tool\DeleteEntitiesByCollection
 
 ```
 
