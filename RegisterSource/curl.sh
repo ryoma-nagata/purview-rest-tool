@@ -33,7 +33,7 @@ body=$(printf '{
             "referenceName": "%s"
         }
     }
-}'$serverEndpoint $collectionId  )
+}' $serverEndpoint $collectionId  )
 
 
 ##############################################################
