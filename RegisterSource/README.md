@@ -60,9 +60,9 @@ export token=
 
 PURVIEWACCOUNTNAME=$purviewAccountName \
 COLLECTIONID=$collectionId \
-SERVERENDPOINT=$serverEndpoint \ 
+SERVERENDPOINT=$serverEndpoint \
 SOURCENAME=$sourceName \
-bash curl.sh
+    bash curl.sh
 
 ```
 
