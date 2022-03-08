@@ -50,6 +50,7 @@ purviewAccountName=
 collectionId=
 serverEndpoint=
 sourceName=
+resourceName=
 export token=
 
 ```
@@ -62,6 +63,7 @@ PURVIEWACCOUNTNAME=$purviewAccountName \
 COLLECTIONID=$collectionId \
 SERVERENDPOINT=$serverEndpoint \
 SOURCENAME=$sourceName \
+RESOURCENAME=$resourceName
     bash curl.sh
 
 ```

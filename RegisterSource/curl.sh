@@ -12,6 +12,7 @@ purviewAccountName=$PURVIEWACCOUNTNAME
 collectionId=$COLLECTIONID
 serverEndpoint=$SERVERENDPOINT
 sourceName=$SOURCENAME
+resourceName=$RESOURCENAME
 
 ##############################################################
 # 定数
@@ -31,9 +32,10 @@ body=$(printf '{
         "collection": {
             "type": "CollectionReference",
             "referenceName": "%s"
-        }
+        },
+        "resourceName": "%s"
     }
-}' $serverEndpoint $collectionId  )
+}' $serverEndpoint $collectionId $resourceName )
 
 
 ##############################################################

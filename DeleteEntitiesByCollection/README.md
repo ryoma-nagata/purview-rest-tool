@@ -61,4 +61,27 @@ bash curl.sh
 ```
 
 
-#### azrest.sh(未作成)
+#### azrest.sh
+
+
+変数をセットします。
+
+```bash:bash
+
+az login
+
+purviewAccountName=
+collectionId=
+export token=
+
+```
+
+実行します。
+
+```bash:bash
+
+PURVIEWACCOUNTNAME=$purviewAccountName \
+COLLECTIONID=$collectionId \
+bash azrest.sh
+
+```
