@@ -16,8 +16,10 @@ cd purview-rest-tool\RegisterSource
 
 - purviewAccountName:Purview名
 - collectionId:コレクションID
-- serverEndpoint:
-- sourceName:
+- serverEndpoint:sqlリソースへのエンドポイント
+- sourceName:ソース名
+- resourceId:SQLリソースのID（AzurePortalのリソースプロパティから確認）
+
 
 collectionIDの確認方法
 
@@ -50,7 +52,7 @@ purviewAccountName=
 collectionId=
 serverEndpoint=
 sourceName=
-resourceName=
+resourceId=
 export token=
 
 ```
@@ -63,10 +65,37 @@ PURVIEWACCOUNTNAME=$purviewAccountName \
 COLLECTIONID=$collectionId \
 SERVERENDPOINT=$serverEndpoint \
 SOURCENAME=$sourceName \
-RESOURCENAME=$resourceName
+RESOURCEID=$resourceId \
     bash curl.sh
 
 ```
 
 
-#### azrest.sh(未作成)
+#### azrest.sh
+
+変数をセットします。
+
+```bash:bash
+
+az login
+
+purviewAccountName=
+collectionId=
+serverEndpoint=
+sourceName=
+resourceId=
+
+```
+
+実行します。
+
+```bash:bash
+
+PURVIEWACCOUNTNAME=$purviewAccountName \
+COLLECTIONID=$collectionId \
+SERVERENDPOINT=$serverEndpoint \
+SOURCENAME=$sourceName \
+RESOURCEID=$resourceId \
+    bash azrest.sh
+
+```

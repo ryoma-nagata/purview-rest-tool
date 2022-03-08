@@ -40,5 +40,4 @@ body=$(printf '{
 
 ##############################################################
 
-curl -X PUT -H "Content-Type: application/json" -H "Authorization: Bearer $token" --data "$body" "$PutURL"
-
+az rest --method put --resource "https://purview.azure.net" --url "$PutURL" --body "$body"
